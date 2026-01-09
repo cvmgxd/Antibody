@@ -35,6 +35,10 @@
 - **Authority Manager**: Emits the `round_start` payload containing `target_number`, `disabled_buttons`, and `round_id`.
 - **Judge**: Validates incoming math expressions. Re-evaluates on server to prevent and override client-side answer injection.
 
+
+### 3. 🗺️ Dependency Map
+`React UI` --> `Socket.io-Client` --> `Node.js Room Manager` --> `Problem Gen (Solver)` --> `Judge`
+
 ---
 
 ## 🔒 Security & Safety Model
@@ -52,4 +56,5 @@
 - [x] Create `PROJECT_STATE.json` to track execution.
 
 ---
-![Antibody UI Mockup](https://raw.githubusercontent.com/cvmgxd/Antibody/main/client/src/assets/mockup.png)
+
+![Antibody UI Mockup](client/src/assets/mockup.jpg)

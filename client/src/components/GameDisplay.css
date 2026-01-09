@@ -1,0 +1,133 @@
+.game-display-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.health-status-container {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.health-bar-group {
+    width: 100%;
+}
+
+.health-label {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.player1 .health-label {
+    color: #48bb78;
+    text-align: left;
+}
+
+.player2 .health-label {
+    color: #f56565;
+    text-align: right;
+}
+
+.health-bar-bg {
+    height: 24px;
+    background: #1a1d23;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.health-bar-fill {
+    height: 100%;
+    width: 100%;
+}
+
+.health-bar-fill.green {
+    background: #48bb78;
+    box-shadow: 0 0 15px rgba(72, 187, 120, 0.8), 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.health-bar-fill.red {
+    background: #f56565;
+    box-shadow: 0 0 15px rgba(245, 101, 101, 0.8), 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.target-card {
+    background: #151931;
+    border: 4px solid #f56565;
+    border-radius: 4px;
+    padding: 3.5rem 1.5rem 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    box-shadow: 0 0 30px rgba(245, 101, 101, 0.3);
+    position: relative;
+    margin-top: 0;
+    /* Flush with keypads */
+    min-height: 400px;
+    /* Ensure consistent height with keypads */
+    justify-content: center;
+}
+
+.card-header {
+    font-size: 0.8rem;
+    color: #4a5568;
+    font-family: monospace;
+}
+
+.target-section,
+.expression-section,
+.timer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #fff;
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.target-number {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    color: #7bb9ff;
+    line-height: 1;
+}
+
+.expression-value {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    min-height: 3rem;
+    border-radius: 4px;
+}
+
+.timer-value {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: #f56565;
+}
+
+.critical-warning {
+    border: 2px solid #ed8936;
+    background: rgba(237, 137, 54, 0.1);
+    color: #ed8936;
+    padding: 0.8rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+}

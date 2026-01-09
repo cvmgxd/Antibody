@@ -1,3 +1,5 @@
 node_modules/
 .env
 *.log
+mcp_config.json
+.cursor/
